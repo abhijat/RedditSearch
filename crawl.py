@@ -11,7 +11,7 @@ def log_error(error, log_file="errors"):
 def get_reddit_json(index_handle, posts, id_date):
     
     headers = {
-            'User-Agent' : 'Search engine project by /u/fjellfras'
+            'User-Agent' : 'Search engine project by /u/abhijat'
     }
     
     link = 'http://www.reddit.com/r/all.json'
