@@ -42,7 +42,7 @@ def parse(query_string):
     if match:
         query.set_query_string(match.group(2))
         query.set_exact_match(True)
-        query_string = match.group(1) + match.group(3)
+        query_string = query_string.replace(match.group(2), '')
 
     match = re.search(r'\+nsfw', query_string)
     if match:
